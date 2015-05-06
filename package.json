@@ -1,0 +1,51 @@
+{
+  "name": "cacheman-multi",
+  "version": "0.1.0",
+  "description": "Multi-tiered cacheman caches",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "doctoc": "doctoc README.md && if [[ $(git diff --shortstat 2> /dev/null | tail -n1) != '' ]]; then git add README.md && git commit --no-verify -m 'table of contents update'; fi",
+    "test": "mocha -R list test/*.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yieme/cacheman-multi"
+  },
+  "keywords": [
+    "cacheman",
+    "cache",
+    "memory",
+    "file",
+    "redis",
+    "mongo"
+  ],
+  "author": "yieme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yieme/cacheman-multi/issues"
+  },
+  "dependencies": {
+    "cacheman": "^1.1.0",
+    "cacheman-file": "0.0.8",
+    "cacheman-mongo": "^0.2.1",
+    "cacheman-redis": "^0.2.0",
+    "convar": "^1.1.6",
+    "lodash": "^3.8.0"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0"
+  },
+  "globalDependencies": {
+    "jshint": "^2.7.0",
+    "mocha": "~2.1.0"
+  },
+  "generatedBy": {
+    "name": "generator-pkg",
+    "version": "0.7.6",
+    "url": "https://github.com/yieme/generator-pkg"
+  }
+}
